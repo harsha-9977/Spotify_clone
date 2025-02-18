@@ -6,8 +6,89 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="main">
+        <div class="top">
+            <div class="logo">
+                <i class="fa-brands fa-spotify" title="Spotify"></i>
+                <!-- <a href="#" title="Spotify">Spotify</a> -->
+            </div>
+            <div class="mid">
+                <div class="homesearch">
+                    <div class="home">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="searchbox">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass" style="padding: 0px 12px;"></i>
+                            <span style="opacity:0.7;">What do u want to play?</span>
+                        </div>
+                        <div class="browse">
+                            <i class="fa-solid fa-window-restore"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sign">
+                <div class="installapp">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <a href="#">Install app</a>
+                </div>
+                <div class="signup">
+                    <a href="#">Sign up</a>
+                </div>
+                <div class="login">
+                    <a href="#" style="color : black">Log in</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <i class="fa-solid fa-layer-group"></i>                       
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxe">
+                    <div class="box">
+                        <div class="box-p1"><p>Create your first playlist</p></div>
+                        <div class="box-p2"><p>It's easy, we'll help you</p></div>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <div class="box-p1"><p>Let's find some podcasts to follow</p></div>
+                        <div class="box-p2"><p>We'll keep you updated on new episodes</p></div>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-less-than"></i>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item">All</button>
+                    <button class="badge nav-item">Music</button>
+                    <button class="badge nav-item">Podcasts</button>
+                </div>
+            </div>
+            <div class="cards"></div>
+        </div>
+        <div class="music-player">Music-Player</div>
+    </div>
 </body>
 </html>
