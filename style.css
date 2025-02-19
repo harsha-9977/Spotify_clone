@@ -6,7 +6,13 @@ body {
     overflow : hidden;
     
 }
-
+.fa-spotify {
+    transition-duration: 0.4s;
+}
+.fa-spotify:hover{
+    transform: scale(1.2);
+    color :rgb(21, 255, 0)
+}
 .main {
     display : flex;
     height : 100vh;
@@ -203,6 +209,11 @@ a {
     padding : 0.5rem 1rem;
     margin-top : 1rem;
     font-weight :550;
+    transition-duration: 0.4s;
+}
+
+.badge:hover {
+    transform: scale(1.2);
 }
 
 .sticky-nav {
@@ -262,7 +273,13 @@ a {
     border-radius: 0.5rem;   
     padding : 1rem;
     margin : 1.5rem;
+    transition-duration: 0.5s;
 }
+
+.card:hover {
+    transform: scale(1.1);
+}
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -302,19 +319,9 @@ a {
     align-items : center;
 }
 
-.album {
-    width : 25%;
-    background-color: bisque;
-}
-
 .player {
     width : 50%;
     background-color: rgb(0, 0, 0);
-}
-
-.controls {
-    width : 25%;
-    background-color: beige;
 }
 
 .player-controls {
@@ -358,15 +365,112 @@ a {
 
 .progress-bar::-webkit-slider-runnable-track {
     background-color: white;
-     border-radius: 100px;
-     height : 0.2rem;
+    border-radius: 100px;
+    height : 0.2rem;
 }
 
 .progress-bar::-webkit-slider-thumb {
     appearance: none;
-
     background-color: rgb(153, 255, 0);
     border-radius: 50%;
     height: 0.6rem; width : 0.6rem;
     margin-top : -3px;
+}
+
+.album {
+    width : 25%;
+    background-color: rgb(0, 0, 0);
+    display : flex; 
+}
+
+.image-div {
+    width : 20%;
+    height : 20%;
+}
+
+.album-image {
+   width: 100%;
+}
+
+.album-info {
+    margin-left : 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.album-name {
+    margin : 0px;
+    font-weight: 600;
+    font-size:medium;
+}
+
+.album-name:hover {
+    text-decoration: underline;
+}
+
+.album-artist {
+    margin : 0px;
+    opacity: 0.7;
+    font-size: small;
+    margin-top : 5px;
+}
+
+.album-artist:hover {
+    opacity : 1;
+    text-decoration: underline;
+}
+
+.liked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+
+.liked:hover a {
+    color :rgb(0, 207, 0);
+}
+
+
+.controls {
+    width : 25%;
+    background-color: rgb(0, 0, 0);
+}
+
+.controls-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.controls-icons i{
+    opacity: 0.7;
+}
+
+.controls-icons i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    color :white
+}
+
+.volume {
+    width: 40%;
+    height: 8px;
+}
+
+.volume::-webkit-slider-runnable-track {
+    background-color: white;
+    border-radius: 100px;
+    height: 1px;
+    appearance: none;
+}
+
+.volume::-webkit-slider-thumb {
+    appearance: none;
+    background-color: rgb(21, 255, 0); 
+    border-radius: 50%;
+    height: 2px;
+    width: 2px;
+    margin-top: -7.5px; 
 }
